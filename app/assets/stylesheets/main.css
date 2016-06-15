@@ -1,0 +1,122 @@
+
+/*************************
+*******Typography******
+**************************/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+  background-color: #fff;
+}
+
+#info img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.post-icon {
+  position: absolute;
+  top:10px;
+  right:10px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border-radius:4px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+.post-meta {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.post-meta span {
+  margin-right: 16px;
+}
+
+#atendimento {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+#atendimento h4{
+  color: #ef473a;
+  margin-bottom: 5%;
+}
+#atendimento .shadow{
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  height: 450px;
+  padding: 5% 10% 0 5%;
+}
+#atendimento .dist{
+  padding-top: 5%;
+}
+#atendimento input{
+  height: 40px;
+}
+
+#contact-us {
+  padding-bottom: 90px;
+}
+
+#contact-us .heading {
+  padding-top: 95px;
+}
+
+#contact-us h1, h3, span{
+  color: #505050;
+}
+
+.form-control {
+  background-color: transparent;
+  border-color: rgba(255,255,255,.1);
+  height: 50px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+textarea.form-control {
+  min-height: 120px;
+  resize:none;
+}
+
+.form-group {
+  margin-top: 10%;
+}
+
+.contact-info {
+  padding-left:70px;
+  font-weight: 300;
+}
+
+ul.address {
+  margin-top: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 8px;
+}
+
+.contact-info ul li a {
+  color: #fff;
+}
+
+.btn-submit {
+  display: block;
+  padding: 12px;
+  width: 100%;
+  color: #fff;
+  border:0;
+  margin-top: 40px;
+}
