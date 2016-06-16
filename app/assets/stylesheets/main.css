@@ -1,16 +1,14 @@
 
-/*************************
-*******Typography******
-**************************/
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  color: #666;
-  background-color: #fff;
+.offset{
+  padding-left: 2.5%;
 }
-
+.margins{
+  padding-left: 2.5%;
+  padding-top: 2.5%;
+}
+.margins p{
+  font-size: 24px;
+}
 #info img {
   max-width: 100%;
   max-height: 100%;
@@ -41,40 +39,90 @@ body {
 .post-meta span {
   margin-right: 16px;
 }
+#main {
+  background-color: #FFDD33;
+  background-size: 100%;
+  min-height: 400px;
+}
+#main h1{
+  font-size: 96px;
+}
+#main p{
+  font-size: 24px;
+  text-transform: uppercase;
+}
+#main .distance {
+  margin-top: 15%;
+}
+#autora {
+  background-color: #FFDD33;
+  background-size: 100%;
+  min-height: 400px;
+}
+#autora img {
+  border-radius: 50%;
+  width: 75%;
+  height: auto;
+  margin: 10%;
+}
 
+#livro {
+  background-color: #FFDD33;
+  background-size: 100%;
+  min-height: 400px;
+}
+#projeto {
+  background-color: #FFDD33;
+  background-size: 100%;
+  min-height: 400px;
+}
+#projeto h1,
+#autora h1,
+#livro h1{
+  font-size: 96px;
+  color: #000;
+  text-align:center;
+}
+#autora h2{
+  color: #480000;
+  font-size: 76px;
+}
+#projeto p,
+#autora p,
+#livro p{
+  line-height: 100%;
+  font-size: 28px;
+}
+#projeto .distance {
+  margin-top: 15%;
+}
+#projeto .f-icons {
+  color: #fff;
+  border-radius: 50%;
+  background-color: #387ef5;
+  height: 58px;
+  width: 58px;
+  line-height: 55px;
+  z-index: 1;
+  font-size: 36px;
+  text-align: center;
+}
 #atendimento {
-  padding-top: 10px;
-  padding-bottom: 0;
+  background-color: #FFDD33;
+  background-size: 100%;
+  min-height: 400px;
 }
-#atendimento h4{
-  color: #ef473a;
-  margin-bottom: 5%;
+.icone {
+  color: #FFDD33;
+  border-radius: 50%;
+  background-color: #000;
+  height: 96px;
+  width: 96px;
+  line-height: 96px;
+  z-index: 1;
+  font-size: 84px;
+  text-align: center;
 }
-#atendimento .shadow{
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
-  background-color: white;
-  height: 450px;
-  padding: 5% 10% 0 5%;
-}
-#atendimento .dist{
-  padding-top: 5%;
-}
-#atendimento input{
-  height: 40px;
-}
-
-#contact-us {
-  padding-bottom: 90px;
-}
-
-#contact-us .heading {
-  padding-top: 95px;
-}
-
-#contact-us h1, h3, span{
-  color: #505050;
-}
-
 .form-control {
   background-color: transparent;
   border-color: rgba(255,255,255,.1);

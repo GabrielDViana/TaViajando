@@ -1,37 +1,87 @@
+<div class="main-nav">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="footer-logo">
+        <a><h1><%= link_to "newcap", root_path, :class => "white-font" %></h1></a>
+      </div>
+
+    </div>
+    <div id="menu"class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="ativo" href="#home">Home</a></li>
+        <li><a href="#participante">Participante</a></li>
+        <li><a href="#expositor">Expositor</a></li>
+        <li><a href="#about-us">Quem somos</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<% flash.each do |key, value| %>
+      <%= content_tag(:div, class: "alert alert-#{key}") do %>
+          <p><%= value %></p>
+      <% end %>
+  <% end %>
+
+<!-- <div class="navbar navbar-transparent">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="#">lol</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav pull-right">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="about">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div> -->
+
 <section id="main">
   <div class="container">
-    <div class="row col-sm-10 col-sm-offset-3">
+    <div class="row col-sm-10 col-sm-offset-1 distance">
       <h1>Tá viajando?</h1>
-      <div class="col-sm-4">
+      <div class="col-sm-6">
         <div class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
           <p>Um Ebook interativo que é divertido </p>
           <p>e inovador voltado para as pessoas  </p>
           <p>de todas as idades. </p>
         </div>
+        <h2>Tá viajando?</h2>
       </div>
-      <div class="col-sm-4 imac-image">
+      <div class="col-sm-6 imac-image">
         <div class="what-is wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
         </div>
       </div>
     </div>
   </div>
-  <div class="border2"></div>
 </section>
+<div class="border2"></div>
 
   <section id="projeto">
       <%= render :template => "home/projeto"%>
-      <div class="border2"></div>
   </section>
+  <div class="border2"></div>
 
   <section id="livro">
       <%= render :template => "home/livro"%>
-      <div class="border2"></div>
   </section>
+  <div class="border2"></div>
 
   <section id="autora">
       <%= render :template => "home/autora"%>
-      <div class="border2"></div>
   </section>
+  <div class="border2"></div>
 
   <section id="atendimento">
     <div id="contact-us">
@@ -40,3 +90,23 @@
       </div>
     </div>
   </section>
+
+  <div class="container-content">
+      <div class="container">
+          <%= form_tag(send_mail_path) do %>
+              <div class="form-group">
+                  <%= label_tag 'name', 'Name' %>
+                  <%= text_field_tag 'name', nil, class: 'form-control', placeholder: 'Your Name' %>
+              </div>
+             <div class="form-group">
+                 <%= label_tag 'email', 'Email' %>
+                 <%= email_field_tag 'email', nil, class: 'form-control', placeholder: 'Your Email Address' %>
+             </div>
+             <div class="form-group">
+                 <%= label_tag 'comments', 'Comments' %>
+                 <%= text_area_tag 'comments', nil, class: 'form-control', rows: 4, placeholder: 'Comments...' %>
+             </div>
+             <%= submit_tag nil, class: 'btn btn-default btn-about pull-right' %>
+         <% end %>
+    </div>
+  </div>

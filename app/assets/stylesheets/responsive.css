@@ -3,31 +3,21 @@
   .main-content {
     min-height: 400px;
   }
-  .imac-image{
-    min-height: 500px;
+  #main {
+    min-height: 900px;
   }
-  .big-triangle:before {
-      right: 50%;
-      border-right: 1500px solid transparent;
-      border-left: 1500px solid;
+  #autora {
+    min-height: 900px;
   }
 
-  .big-triangle:after {
-      left: 50%;
-      border-left: 1500px solid transparent;
-      border-right: 1500px solid;
+  #livro {
+    min-height: 900px;
   }
-
-  #home-slider .fa-anchor {
-    left: 49.4%;
-    bottom: -15px;
+  #projeto {
+    min-height: 900px;
   }
-
-  #about-us .left-half {
-    height: 1000px;
-  }
-  #about-us .right-half {
-    height: 1000px;
+  #atendimento {
+    min-height: 900px;
   }
 }
 
@@ -35,6 +25,21 @@
 @media (min-width: 992px) and (max-width: 1199px) {
   .imac-image{
     min-height: 400px;
+  }
+  #main {
+    min-height: 600px;
+  }
+  #autora {
+    min-height: 600px;
+  }
+  #livro {
+    min-height: 600px;
+  }
+  #projeto {
+    min-height: 600px;
+  }
+  #atendimento {
+    min-height: 600px;
   }
 }
 
