@@ -5,8 +5,10 @@ class HomeController < ApplicationController
   def send_mail
     name = params[:name]
     email = params[:email]
+    phone = params[:phone]
     body = params[:comments]
-    ContactMailer.contact_email(name, email, body).deliver_now
+    state = params[:state]
+    ContactMailer.contact_email(name, email, phone, body, state).deliver_now
     redirect_to root_path, alert: 'Mensagem enviada'
   end
 end

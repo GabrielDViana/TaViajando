@@ -78,7 +78,8 @@
 }
 #projeto h1,
 #autora h1,
-#livro h1{
+#livro h1,
+#atendimento h1{
   font-size: 96px;
   color: #000;
   text-align:center;
@@ -107,8 +108,19 @@
   font-size: 36px;
   text-align: center;
 }
-#atendimento {
+#atendimento .f-icons {
+  float:left;
+  color: #fff;
   background-color: #FFDD33;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  z-index: 1;
+  font-size: 36px;
+  text-align: center;
+}
+#atendimento {
+  background-color: #c0c0c0;
   background-size: 100%;
   min-height: 400px;
 }
@@ -120,20 +132,29 @@
   width: 96px;
   line-height: 96px;
   z-index: 1;
-  font-size: 84px;
+  font-size: 78px;
   text-align: center;
 }
-.form-control {
-  background-color: transparent;
-  border-color: rgba(255,255,255,.1);
-  height: 50px;
-  border-radius: 0;
-  box-shadow: none;
+.submit {
+  margin-top: 2.5%;
+  width: 20%;
+  margin-left: 40%;
+  color: #fff;
+  background-color: #FFDD33;
 }
-
+.form-control {
+  background-color: #fff;
+  border-radius: 0;
+  height: 60px;
+  font-size: 28px;
+  width: calc(100% - 60px);
+}
+.form{
+  margin-bottom: 2.5%;
+}
 textarea.form-control {
-  min-height: 120px;
-  resize:none;
+  height: 100%;
+  width: 100%;
 }
 
 .form-group {

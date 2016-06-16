@@ -41,6 +41,27 @@
   #atendimento {
     min-height: 600px;
   }
+  #projeto h1,
+  #autora h1,
+  #livro h1,
+  #atendimento h1{
+    font-size: 72px;
+    color: #000;
+    text-align:center;
+  }
+  #autora h2{
+    color: #480000;
+    font-size: 54px;
+  }
+  #projeto p,
+  #autora p,
+  #livro p{
+    line-height: 100%;
+    font-size: 20px;
+  }
+  #projeto h3{
+    font-size: 20px;
+  }
 }
 
 /* sm */
@@ -67,6 +88,27 @@
 	}
   .imac-image{
     min-height: 500px;
+  }
+  #projeto h1,
+  #autora h1,
+  #livro h1,
+  #atendimento h1{
+    font-size: 76px;
+    color: #000;
+    text-align:center;
+  }
+  #autora h2{
+    color: #480000;
+    font-size: 58px;
+  }
+  #projeto p,
+  #autora p,
+  #livro p{
+    line-height: 100%;
+    font-size: 18px;
+  }
+  #projeto h3{
+    font-size: 16px;
   }
 }
 

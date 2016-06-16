@@ -6,7 +6,8 @@ class ContactMailer < ActionMailer::Base
         @name = name
         @email = email
         @body = body
-
-        mail(from: email, subject: 'Contato: "Ta Viajando?"')
+        @phone = phone
+        @state = state
+        mail(from: 'ta.viajando2016@gmail.com', subject: 'Contato: "Ta Viajando?"')
     end
 end

@@ -8,5 +8,10 @@
     <body>
       <p>Você recebeu um email de: <%= "#{ @name } (#{ @email }) " %>com a seguinte mensagem:</p>
       <p><%= @body %></p>
+      <p>
+        Informações adicionais:
+        Telefone: <%= @phone  %>
+        Estado: <%= @state  %>
+      </p>
     </body>
 </html>
