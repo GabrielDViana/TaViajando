@@ -6,16 +6,16 @@ a,
 .single-table.featured .btn.btn-primary,
 .contact-info ul li a:hover,
 #footer .footer-bottom a  {
-  color: #fff;
+  color: #000;
 }
 
 .btn.btn-primary:hover,
 .btn-submit:hover {
-  background-color: #ef473a
+  background-color: #FFDD33;
 }
 
 a:hover, a:focus {
-	color: #ef473a;
+	color: #000;
 }
 
 .main-nav,
@@ -34,21 +34,5 @@ a:hover, a:focus {
 .left-control:hover,
 .right-control:hover,
 .folio-overview a:hover {
-  background-color:#ef473a;
-}
-
-.twitter-left-control:hover,
-.twitter-right-control:hover,
-.btn-loadmore:hover  {
-	border: 1px solid #ef473a;
-}
-
-.caption .btn-start:hover,
-.left-control:hover,
-.right-control:hover {
-	border-color: #ef473a;
-}
-
-.twitter-icon .fa-twitter:after {
-	border-color: #ef473a transparent transparent;
+  background-color:#FFDD33;
 }
