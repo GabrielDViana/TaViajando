@@ -1,6 +1,6 @@
 class ContactMailer < ActionMailer::Base
 
-  default to: 'ta.viajando2016@gmail.com'
+  default to: 'contato@taviajando.com.br'
 
     def contact_email(name, email, phone, body, state)
         @name = name

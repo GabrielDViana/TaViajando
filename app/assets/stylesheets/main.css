@@ -1,5 +1,5 @@
 body {
-  font-family: Lato;
+  font-family: 'Lato';
 }
 
 .container{
@@ -42,7 +42,7 @@ body {
 
 .nav li a {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 28px;
     text-align: center;
 }
 
@@ -68,12 +68,11 @@ body {
   height: auto;
 }
 .logo1{
-  margin-left: -2.5%;
   width: 30%;
   height: auto;
 }
 .logo{
-  width: 70%;
+  width: 100%;
   height: auto;
 }
 #circles{
@@ -107,10 +106,14 @@ body {
   min-height: 99.9vh;
 }
 #main h1{
-  font-size: 96px;
+  font-size: 48px;
+}
+#main h2{
+  font-size: 36px;
 }
 #main p{
   font-size: 24px;
+  font-style: italic;
   text-transform: uppercase;
 }
 #main .distance {
@@ -151,15 +154,24 @@ body {
   color: #000;
   text-align:center;
 }
+#projeto i,
+#autora i,
+#livro i,
+#atendimento i{
+  font-weight: bold;
+}
 #autora h2{
   color: #480000;
+  font-weight: bold;
   font-size: 76px;
 }
 #projeto p,
 #autora p,
 #livro p{
-  line-height: 100%;
-  font-size: 28px;
+  line-height: 120%;
+  font-size: 20px;
+  font-family: 'Lato';
+  font-style: normal;
 }
 #projeto .distance {
   margin-top: 15%;
@@ -167,16 +179,18 @@ body {
 #projeto .f-icons {
   color: #fff;
   border-radius: 50%;
-  background-color: #387ef5;
+  background-color: #02B7C7;
   height: 58px;
   width: 58px;
-  line-height: 55px;
+  line-height: 58px;
   z-index: 1;
   font-size: 36px;
   text-align: center;
 }
 #projeto h3 {
   line-height: 100%;
+  font-style:italic;
+  font-weight:bold;
 }
 #atendimento .f-icons {
   float:left;
@@ -201,9 +215,9 @@ body {
   background-color: #000;
   height: 96px;
   width: 96px;
-  line-height: 96px;
+  line-height: 99px;
   z-index: 1;
-  font-size: 78px;
+  font-size: 76px;
   text-align: center;
 }
 #projeto .icone,
