@@ -127,9 +127,9 @@ body {
 }
 #autora img {
   border-radius: 50%;
-  width: 60%;
+  width: 75%;
   height: auto;
-  margin: 10%;
+  margin-left: 10%;
 }
 
 #livro {
@@ -161,9 +161,10 @@ body {
   font-weight: bold;
 }
 #autora h2{
-  color: #480000;
+  color: #69181A;
   font-weight: bold;
-  font-size: 76px;
+  font-size: 54px;
+  margin-bottom: 2.5%;
 }
 #projeto p,
 #autora p,
