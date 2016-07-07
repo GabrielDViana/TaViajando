@@ -11,9 +11,11 @@ require 'mina/git'
 #   branch       - Branch name to deploy. (needed by mina/git)
 
 set :domain, 'taviajando.com.br'
-set :deploy_to, '/var/www/taviajando'
+set :deploy_to, 'taviajando'
 set :repository, 'git@gitlab.com:cpdev/TaViajando.git'
 set :branch, 'master'
+set  :user, 'taviajando'
+set :term_mode, nil
 
 # For system-wide RVM install.
 #   set :rvm_path, '/usr/local/rvm/bin/rvm'
@@ -42,10 +44,10 @@ end
 # For Rails apps, we'll make some of the shared paths that are shared between
 # all releases.
 task :setup => :environment do
-  queue! %[mkdir -p "#{deploy_to}/#{shared_path}/log"]
+  queue! %[mkdir "#{deploy_to}/#{shared_path}/log"]
   queue! %[chmod g+rx,u+rwx "#{deploy_to}/#{shared_path}/log"]
 
-  queue! %[mkdir -p "#{deploy_to}/#{shared_path}/config"]
+  queue! %[mkdir  "#{deploy_to}/#{shared_path}/config"]
   queue! %[chmod g+rx,u+rwx "#{deploy_to}/#{shared_path}/config"]
 
   queue! %[touch "#{deploy_to}/#{shared_path}/config/database.yml"]
@@ -58,7 +60,7 @@ task :setup => :environment do
 
     queue %[
       if ! ssh-keygen -H  -F #{repo_host} &>/dev/null; then
-        ssh-keyscan -t rsa -p #{repo_port} -H #{repo_host} >> ~/.ssh/known_hosts
+        ssh-keyscan -t rsa  #{repo_port} -H #{repo_host} >> ~/.ssh/known_hosts
       fi
     ]
   end
@@ -80,7 +82,7 @@ task :deploy => :environment do
     invoke :'deploy:cleanup'
 
     to :launch do
-      queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
+      queue "mkdir  #{deploy_to}/#{current_path}/tmp/"
       queue "touch #{deploy_to}/#{current_path}/tmp/restart.txt"
     end
   end
