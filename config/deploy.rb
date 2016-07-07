@@ -13,7 +13,7 @@ require 'mina/git'
 set :domain, 'taviajando.com.br'
 set :deploy_to, 'taviajando'
 set :forward_agent, true
-set :repository, 'git@gitlab.com:cpdev/TaViajando.git'
+set :repository, 'https://github.com/GabrielDViana/TaViajando.git'
 set :branch, 'master'
 set  :user, 'taviajando'
 set :term_mode, nil
